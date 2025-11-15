@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Golden Bean Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ====================
+       LOADER (Add this right after <body>)
+       ==================== -->
+  <div id="loader" aria-hidden="true">
+    <div class="coffee-bean" role="img" aria-label="coffee bean spinner"></div>
+    <p class="loader-text">Brewing your experience...</p>
+  </div>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header class="header" role="navigation">
+    <div class="logo">Golden Bean</div>
+    <nav>
+      <button class="nav-btn" data-target="hero">Home</button>
+      <button class="nav-btn" data-target="about">About</button>
+      <button class="nav-btn" data-target="menu">Menu</button>
+      <button class="nav-btn" data-target="specials">Specials</button>
+      <button class="nav-btn" data-target="testimonials">Reviews</button>
+      <button class="nav-btn" data-target="contact">Contact</button>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Golden Bean</h1>
+      <p>Handcrafted coffee, cozy atmosphere, unforgettable moments.</p>
+      <button class="hero-btn">View Menu</button>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+          Born from a love for vintage cafés and handcrafted experiences,
+          Golden Bean represents tradition, warmth, and authentic flavor.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/img/about.jpg" alt="Coffee shop ambience" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU ==================== -->
+  <section id="menu" class="section menu">
+    <h2>Our Menu</h2>
+
+    <!-- FILTER BUTTONS -->
+    <div class="menu-filters">
+      <button class="menu-filter-btn active" data-filter="all">All</button>
+      <button class="menu-filter-btn" data-filter="drinks">Drinks</button>
+      <button class="menu-filter-btn" data-filter="food">Food</button>
+      <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
+    </div>
+
+    <!-- ======== DRINKS ======== -->
+    <h3 class="menu-category-title" data-category="drinks">Drinks</h3>
+    <div class="menu-grid" data-category="drinks">
+
+      <div class="menu-card">
+        <img src="assets/img/espresso.jpg" alt="Espresso" loading="lazy">
+        <h3>Espresso</h3>
+        <p>Rich, bold, and full of character.</p>
+        <span class="price">$4.50</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/cappuccino.jpg" alt="Cappuccino" loading="lazy">
+        <h3>Cappuccino</h3>
+        <p>Perfect balance of foam and flavor.</p>
+        <span class="price">$5.00</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/latte.jpg" alt="Latte" loading="lazy">
+        <h3>Latte</h3>
+        <p>Creamy, smooth, beautifully textured.</p>
+        <span class="price">$5.50</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/mocha.jpg" alt="Mocha" loading="lazy">
+        <h3>Mocha</h3>
+        <p>Chocolatey, warm, and indulgent.</p>
+        <span class="price">$6.00</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/flatwhite.jpg" alt="Flat White" loading="lazy">
+        <h3>Flat White</h3>
+        <p>Strong espresso with silky milk texture.</p>
+        <span class="price">$5.80</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/macchiato.jpg" alt="Macchiato" loading="lazy">
+        <h3>Macchiato</h3>
+        <p>A bold shot marked with velvety foam.</p>
+        <span class="price">$4.80</span>
+      </div>
+
+    </div>
+
+    <!-- ======== FOOD ======== -->
+    <h3 class="menu-category-title" data-category="food">Food</h3>
+    <div class="menu-grid" data-category="food">
+
+      <div class="menu-card">
+        <img src="assets/img/toast.jpg" alt="Butter Toast" loading="lazy">
+        <h3>Butter Toast</h3>
+        <p>Warm toasted bread with rich golden butter.</p>
+        <span class="price">$3.00</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/sandwich.jpg" alt="Ham & Cheese Sandwich" loading="lazy">
+        <h3>Ham & Cheese Sandwich</h3>
+        <p>Classic, toasted, simple and delicious.</p>
+        <span class="price">$4.50</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/croissant.jpg" alt="Croissant" loading="lazy">
+        <h3>Croissant</h3>
+        <p>Flaky, buttery, freshly baked every morning.</p>
+        <span class="price">$3.80</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/avocado.jpg" alt="Avocado Toast" loading="lazy">
+        <h3>Avocado Toast</h3>
+        <p>Creamy avocado on rustic toasted bread.</p>
+        <span class="price">$6.20</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/frenchtoast.jpg" alt="French Toast" loading="lazy">
+        <h3>French Toast</h3>
+        <p>Sweet, soft, lightly caramelized edges.</p>
+        <span class="price">$5.50</span>
+      </div>
+
+    </div>
+
+    <!-- ======== DESSERTS ======== -->
+    <h3 class="menu-category-title" data-category="desserts">Desserts</h3>
+    <div class="menu-grid" data-category="desserts">
+
+      <div class="menu-card">
+        <img src="assets/img/cake.jpg" alt="Chocolate Cake" loading="lazy">
+        <h3>Chocolate Cake</h3>
+        <p>Moist, rich, with a classic homemade taste.</p>
+        <span class="price">$4.00</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/cookies.jpg" alt="Cookies" loading="lazy">
+        <h3>Cookies</h3>
+        <p>Crispy edges, soft center—freshly baked.</p>
+        <span class="price">$2.50</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/carrotcake.jpg" alt="Carrot Cake" loading="lazy">
+        <h3>Carrot Cake</h3>
+        <p>Spiced, moist, topped with cream cheese frosting.</p>
+        <span class="price">$4.20</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/tiramisu.jpg" alt="Tiramisu" loading="lazy">
+        <h3>Tiramisu</h3>
+        <p>Classic Italian dessert with coffee & mascarpone.</p>
+        <span class="price">$5.00</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/img/bananabread.jpg" alt="Banana Bread" loading="lazy">
+        <h3>Banana Bread</h3>
+        <p>Warm, sweet, soft—perfect with coffee.</p>
+        <span class="price">$3.80</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==================== SPECIALS ==================== -->
+  <section id="specials" class="section specials">
+    <h2>Special of the Week</h2>
+
+    <div class="special-card">
+      <img src="assets/img/special.jpg" alt="Special Drink" loading="lazy">
+
+      <div class="special-info">
+        <h3>Caramel Walnut Latte</h3>
+        <p>
+          A comforting blend of caramel sweetness and toasted walnut aromas,
+          crafted to brighten your day.
+        </p>
+        <span class="special-price">$6.50</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS / REVIEWS ==================== -->
+  <section id="testimonials" class="testimonials-section">
+  <h2 class="section-title">What Our Customers Say</h2>
+
+  <div class="reviews-carousel">
+
+    <div class="review-card active">
+      <div class="stars">★★★★★</div>
+      <p>"Golden Bean feels like a peaceful escape. The ambience, the aroma, the staff — everything works together perfectly."</p>
+      <span class="review-author">— Daniel Kim</span>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Their pastries taste homemade in the best way. Pair them with a cappuccino and your day instantly improves."</p>
+      <span class="review-author">— Amelia Carter</span>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Excellent service and attention to detail. You can tell the baristas truly care about the craft."</p>
+      <span class="review-author">— Liam Schneider</span>
+    </div>
+
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="carousel-btn prev">❮</button>
+  <button class="carousel-btn next">❯</button>
+
+  <!-- Indicators -->
+  <div class="carousel-dots"></div>
+
+</section>
+
+  <!-- ==================== CONTACT / FOOTER ==================== -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2 class="footer-logo">Golden Bean</h2>
+      <p>Your daily dose of handcrafted coffee.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: contact@goldenbean.com</p>
+      <p>Phone: +1 (555) 921-3042</p>
+      <p>Location: 21 Maple Street, Portland</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Golden Bean Coffee — All Rights Reserved</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
