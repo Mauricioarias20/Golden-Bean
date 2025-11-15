@@ -5,7 +5,6 @@
   <title>Golden Bean Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Typography -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,15 +13,11 @@
 
 <body>
 
-  <!-- ====================
-       LOADER (Add this right after <body>)
-       ==================== -->
   <div id="loader" aria-hidden="true">
     <div class="coffee-bean" role="img" aria-label="coffee bean spinner"></div>
     <p class="loader-text">Brewing your experience...</p>
   </div>
 
-  <!-- ==================== HEADER / NAV ==================== -->
   <header class="header" role="navigation">
     <div class="logo">Golden Bean</div>
     <button id="theme-toggle" aria-label="Toggle dark mode">
@@ -39,7 +34,6 @@
       <button class="nav-btn" data-target="contact">Contact</button>
     </nav>
 
-    <!-- HAMBURGER BUTTON FOR MOBILE (ADDED) -->
     <button id="hamburger" class="hamburger" aria-label="Open navigation">
       <span></span>
       <span></span>
@@ -47,7 +41,6 @@
     </button>
   </header>
 
-  <!-- ==================== HERO ==================== -->
   <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Welcome to Golden Bean</h1>
@@ -56,7 +49,6 @@
     </div>
   </section>
 
-  <!-- ==================== ABOUT ==================== -->
   <section id="about" class="section about">
     <div class="about-container">
       <div class="about-text">
@@ -73,12 +65,9 @@
     </div>
   </section>
 
-  <!-- ==================== MENU ==================== -->
   <section id="menu" class="section menu">
     <h2>Our Menu</h2>
     
-
-    <!-- FILTER BUTTONS -->
     <div class="menu-filters">
       <button class="menu-filter-btn active" data-filter="all">All</button>
       <button class="menu-filter-btn" data-filter="drinks">Drinks</button>
@@ -86,7 +75,6 @@
       <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
     </div>
 
-    <!-- ======== DRINKS ======== -->
     <h3 class="menu-category-title" data-category="drinks">Drinks</h3>
     <div class="menu-grid" data-category="drinks">
 
@@ -152,7 +140,6 @@
 
     </div>
 
-    <!-- ======== FOOD ======== -->
     <h3 class="menu-category-title" data-category="food">Food</h3>
     <div class="menu-grid" data-category="food">
 
@@ -207,8 +194,6 @@
       </div>
 
     </div>
-
-    <!-- ======== DESSERTS ======== -->
     <h3 class="menu-category-title" data-category="desserts">Desserts</h3>
     <div class="menu-grid" data-category="desserts">
 
@@ -266,12 +251,10 @@
 
   </section>
 
-<!-- ==================== FAVORITES ==================== -->
 <section id="favorites" class="section favorites-section">
   <h2>Your Favorites</h2>
 
   <div id="favorites-list" class="favorites-grid">
-    <!-- JS will insert favorite cards here -->
   </div>
 
   <p id="no-favorites" class="no-favorites-message">
@@ -279,8 +262,6 @@
   </p>
 </section>
 
-
-  <!-- ==================== SPECIALS ==================== -->
   <section id="specials" class="section specials">
     <h2>Special of the Week</h2>
 
@@ -298,7 +279,6 @@
     </div>
   </section>
 
-  <!-- ==================== TESTIMONIALS / REVIEWS ==================== -->
   <section id="testimonials" class="testimonials-section">
   <h2 class="section-title">What Our Customers Say</h2>
 
@@ -324,16 +304,14 @@
 
   </div>
 
-  <!-- Navigation Arrows -->
+
   <button class="carousel-btn prev">❮</button>
   <button class="carousel-btn next">❯</button>
 
-  <!-- Indicators -->
   <div class="carousel-dots"></div>
 
 </section>
 
-  <!-- ==================== CONTACT / FOOTER ==================== -->
  <footer class="footer">
   <div class="footer-container">
 
