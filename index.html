@@ -34,12 +34,28 @@
       <button class="nav-btn" data-target="contact">Contact</button>
     </nav>
 
-    <button id="hamburger" class="hamburger" aria-label="Open navigation">
+    <button id="mobileToggle" class="mobile-toggle" aria-label="Open navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
   </header>
+
+  <!-- ===========================
+        MOBILE MENU (AGREGADO)
+  ============================ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close">&times;</button>
+
+    <button class="mobile-link nav-btn" data-target="hero">Home</button>
+    <button class="mobile-link nav-btn" data-target="about">About</button>
+    <button class="mobile-link nav-btn" data-target="menu">Menu</button>
+    <button class="mobile-link nav-btn" data-target="specials">Specials</button>
+    <button class="mobile-link nav-btn" data-target="testimonials">Reviews</button>
+    <button class="mobile-link nav-btn" data-target="favorites">Favorites</button>
+    <button class="mobile-link nav-btn" data-target="contact">Contact</button>
+  </div>
+  <!-- =========================== -->
 
   <section id="hero" class="hero">
     <div class="hero-content">
@@ -194,6 +210,7 @@
       </div>
 
     </div>
+
     <h3 class="menu-category-title" data-category="desserts">Desserts</h3>
     <div class="menu-grid" data-category="desserts">
 
