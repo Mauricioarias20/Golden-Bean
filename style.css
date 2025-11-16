@@ -705,37 +705,35 @@ body {
 
 @media (max-width: 768px) {
 
-  header {
+  .header {
     flex-direction: column;
-    padding: 12px 0;
-    gap: 10px;
+    padding: 18px 15px;
+    gap: 12px;
+    text-align: center;
   }
 
-  .nav-links {
+  nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
+    width: 100%;
   }
 
   .nav-btn {
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
   }
 
   body {
-    padding-top: 140px; 
+    padding-top: 150px;
   }
 
   .hero {
-    padding-top: 30px;
+    padding: 80px 15px;
   }
 
   .menu-grid {
     grid-template-columns: 1fr;
-  }
-
-  #favorites {
-    padding-top: 20px;
   }
 
   .favorites-grid {
