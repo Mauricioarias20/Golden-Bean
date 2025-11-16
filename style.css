@@ -702,3 +702,43 @@ body {
 .dark-mode .no-favorites {
   color: #bbb;
 }
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  body {
+    padding-top: 140px; 
+  }
+
+  .hero {
+    padding-top: 30px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #favorites {
+    padding-top: 20px;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+}
