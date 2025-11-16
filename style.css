@@ -1,13 +1,3 @@
-/* ==========================
-   GOLDEN BEAN — STYLE.CSS
-   Unified, cleaned and mobile-fixed version
-   (Preserves your original look; adds mobile panel,
-   hamburger, fixes header overlap and favorites)
-   ========================== */
-
-/* --------------------------
-   BASE / VARIABLES
-   -------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -24,13 +14,11 @@
   --footer-bg: #1c1a17;
   --footer-text: #f5e6d3;
 
-  /* mobile panel */
   --panel-bg: #1a1a1a;
   --panel-text: #fff;
   --panel-width: 320px;
 }
 
-/* global body */
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
@@ -41,7 +29,6 @@ body {
   transition: background .35s ease, color .35s ease;
 }
 
-/* serif titles */
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -49,14 +36,12 @@ h1, h2, h3 {
   color: var(--dark-brown);
 }
 
-/* containers */
 .section {
   padding: 90px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
-/* fade reveal helper */
 .fade {
   opacity: 0;
   transform: translateY(30px);
@@ -67,9 +52,6 @@ h1, h2, h3 {
   transform: translateY(0);
 }
 
-/* --------------------------
-   LOADER
-   -------------------------- */
 #loader {
   position: fixed;
   inset: 0;
@@ -119,10 +101,6 @@ h1, h2, h3 {
   pointer-events: none;
 }
 
-/* --------------------------
-   HEADER / NAV
-   -------------------------- */
-/* fixed header: ensure it doesn't cover content on small screens */
 .header {
   position: fixed;
   top: 0;
@@ -137,7 +115,6 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.18);
 }
 
-/* logo */
 .logo {
   color: var(--accent);
   font-family: "Playfair Display", serif;
@@ -145,14 +122,12 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* main nav - default desktop */
 nav {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-/* nav buttons */
 .nav-btn {
   background: transparent;
   border: 1px solid rgba(217,200,180,0.5);
@@ -171,9 +146,8 @@ nav {
   transform: translateY(-2px);
 }
 
-/* hamburger button (mobile toggle) */
 .hamburger {
-  display: none; /* shown only on small screens */
+  display: none;
   background: transparent;
   border: none;
   width: 44px;
@@ -191,10 +165,7 @@ nav {
   border-radius: 2px;
 }
 
-/* --------------------------
-   HERO
-   -------------------------- */
-#hero { padding-top: 120px; /* offset for fixed header */ }
+#hero { padding-top: 120px; }
 
 .hero {
   text-align: center;
@@ -237,9 +208,6 @@ nav {
 }
 .hero-btn:hover { background: #fff3df; transform: translateY(-3px); }
 
-/* --------------------------
-   ABOUT
-   -------------------------- */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -260,12 +228,8 @@ nav {
   .about-text { text-align: left; padding-right: 24px; }
 }
 
-/* --------------------------
-   MENU
-   -------------------------- */
 .menu h2 { text-align: center; margin-bottom: 30px; }
 
-/* filters */
 .menu-filters {
   display: flex;
   justify-content: center;
@@ -297,7 +261,6 @@ nav {
   box-shadow: 0 0 14px rgba(233,215,179,0.28);
 }
 
-/* category title */
 .menu-category-title {
   margin-top: 40px;
   margin-bottom: 10px;
@@ -306,7 +269,6 @@ nav {
   color: var(--dark-brown);
 }
 
-/* grid */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -315,9 +277,9 @@ nav {
   margin-bottom: 24px;
 }
 
-/* menu-card: ensure relative for absolute favorite button */
+
 .menu-card {
-  position: relative; /* ADDED: important for favorite btn placement */
+  position: relative; 
   background: var(--card-bg);
   padding: 18px;
   border-radius: 10px;
@@ -341,9 +303,6 @@ nav {
 
 .menu-grid:empty { display: none; }
 
-/* --------------------------
-   SPECIALS
-   -------------------------- */
 .special-card {
   display: flex;
   flex-direction: column;
@@ -365,9 +324,6 @@ nav {
   .special-info { width: 55%; }
 }
 
-/* --------------------------
-   TESTIMONIALS / REVIEWS
-   -------------------------- */
 .testimonials-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 20px; }
 .testimonial {
   background: var(--card-bg);
@@ -382,9 +338,6 @@ nav {
 .testimonial p { margin-bottom: 10px; font-size: 0.98rem; }
 .testimonial span { font-weight: 600; color: #3a2f28; }
 
-/* --------------------------
-   FOOTER
-   -------------------------- */
 .footer {
   width: 100%;
   background: #1c1a17;
@@ -416,12 +369,8 @@ nav {
 
 .footer-bottom { margin-top: 50px; text-align: center; font-size: 0.9rem; opacity: 0.7; }
 
-/* focus */
 button:focus { box-shadow: 0 0 0 3px rgba(200,170,120,0.18); }
 
-/* --------------------------
-   CAROUSEL
-   -------------------------- */
 .testimonials-section { text-align: center; padding: 4rem 2rem; background: #f4f1ec; }
 .reviews-carousel { position: relative; max-width: 850px; margin: 2rem auto; display: flex; justify-content: center; align-items: center; height: 260px; }
 .review-card {
@@ -439,9 +388,6 @@ button:focus { box-shadow: 0 0 0 3px rgba(200,170,120,0.18); }
 .carousel-dots div { width: 10px; height: 10px; background: #c1c1c1; border-radius: 50%; cursor: pointer; transition: background .3s; }
 .carousel-dots div.active { background: #3b2f2f; }
 
-/* --------------------------
-   THEME TOGGLE
-   -------------------------- */
 #theme-toggle {
   background: none;
   border: none;
@@ -459,9 +405,6 @@ button:focus { box-shadow: 0 0 0 3px rgba(200,170,120,0.18); }
 .dark-mode #theme-toggle .sun { opacity: 0; transform: scale(0.5); }
 .dark-mode #theme-toggle .moon { opacity: 1; transform: scale(1); }
 
-/* --------------------------
-   DARK MODE VARIABLES
-   -------------------------- */
 :root {
   --bg-light: #faf7f0;
 }
@@ -472,14 +415,10 @@ button:focus { box-shadow: 0 0 0 3px rgba(200,170,120,0.18); }
 }
 body { background: var(--bg); color: var(--text); }
 
-/* ensure card and review background follow variable */
 .card,
 .review-card,
 .menu-grid .menu-item { background: var(--card-bg); transition: background 0.35s ease; }
 
-/* --------------------------
-   FAVORITE BUTTON
-   -------------------------- */
 .favorite-btn {
   background: none;
   border: none;
@@ -495,70 +434,50 @@ body { background: var(--bg); color: var(--text); }
 .favorite-btn.active i { color: #d62828; }
 .favorite-btn i { pointer-events: none; }
 
-/* --------------------------
-   FAVORITES SECTION
-   -------------------------- */
 .favorites-section { padding: 60px 20px; }
 .favorites-section h2 { text-align: center; margin-bottom: 20px; }
 .favorites-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
 .no-favorites-message,
 .no-favorites { text-align: center; font-size: 1.2rem; margin-top: 15px; opacity: 0.6; }
 
-/* --------------------------
-   ACCESSIBILITY
-   -------------------------- */
 :focus { outline: none; }
 
-/* --------------------------
-   RESPONSIVE (DESKTOP -> TABLET -> MOBILE)
-   -------------------------- */
-
-/* small screens adjustments */
 @media (max-width: 1024px) {
-  /* slightly smaller headings on tablets */
+ 
   .hero h1 { font-size: 2.6rem; }
 }
 
-/* main mobile breakpoint */
+
 @media (max-width: 768px) {
 
-  /* header becomes column but we will use hamburger + slide panel */
   .header {
     padding: 12px 16px;
     align-items: center;
     gap: 6px;
   }
 
-  /* hide desktop nav to avoid overcrowd */
   nav {
     display: none;
   }
 
-  /* show hamburger */
   .hamburger { display: block; }
 
-  /* ensure fixed header doesn't cover content:
-     we'll add top padding to body (works even if JS toggles panel) */
   body {
-    padding-top: 72px; /* header ~56-72px — fits most phone sizes */
+    padding-top: 72px; 
   }
 
-  /* hero spacing */
   .hero {
     padding: 80px 14px;
   }
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 0.95rem; }
 
-  /* menu grid -> single column */
   .menu-grid {
     grid-template-columns: 1fr;
   }
 
-  /* favorite and favorites grid -> single column */
   .favorites-grid { grid-template-columns: 1fr; }
 
-  /* adjust nav buttons style when shown inside panel */
   .panel-nav .nav-btn {
     display: block;
     width: 100%;
@@ -573,18 +492,12 @@ body { background: var(--bg); color: var(--text); }
   }
 }
 
-/* extra small phones */
 @media (max-width: 420px) {
   .hero { padding: 70px 12px; }
   .hero h1 { font-size: 1.7rem; }
   body { padding-top: 68px; }
 }
 
-/* --------------------------
-   SLIDE PANEL (MOBILE NAV + FAVORITES)
-   Implemented as right-side panel that overlays content;
-   JS toggles .panel-open on <body> to show/hide
-   -------------------------- */
 .mobile-panel {
   position: fixed;
   top: 0;
@@ -603,10 +516,8 @@ body { background: var(--bg); color: var(--text); }
   overflow-y: auto;
 }
 
-/* show panel when body has class .panel-open */
 body.panel-open .mobile-panel { transform: translateX(0); }
 
-/* panel header row */
 .mobile-panel .panel-top {
   display: flex;
   align-items: center;
@@ -626,14 +537,12 @@ body.panel-open .mobile-panel { transform: translateX(0); }
   cursor: pointer;
 }
 
-/* panel nav (stacked links) */
 .mobile-panel .panel-nav {
   margin-top: 6px;
   display: flex;
   flex-direction: column;
 }
 
-/* small helper: favorites area in panel */
 .mobile-panel .panel-favorites {
   margin-top: 18px;
 }
@@ -654,7 +563,6 @@ body.panel-open .mobile-panel { transform: translateX(0); }
 .mini-card img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; }
 .mini-card .mini-title { font-size: 0.95rem; color: var(--panel-text); }
 
-/* when panel open, dim background (overlay) */
 .panel-overlay {
   position: fixed;
   inset: 0;
@@ -666,28 +574,18 @@ body.panel-open .mobile-panel { transform: translateX(0); }
 }
 body.panel-open .panel-overlay { opacity: 1; pointer-events: auto; }
 
-/* --------------------------
-   UTILITY CLASSES
-   -------------------------- */
 .text-center { text-align: center; }
 .hidden { display: none !important; }
 .show { display: block !important; }
 
-/* small helpers for spacing */
 .mt-8 { margin-top: 8px; }
 .mt-12 { margin-top: 12px; }
 .mb-12 { margin-bottom: 12px; }
 
-/* --------------------------
-   CLEANUPS / FALLBACKS
-   -------------------------- */
-/* make sure menu-filter buttons wrap nicely on small widths */
 .menu-filters { gap: 10px; }
 
-/* ensure .menu-category-title is visible on small widths */
 .menu-category-title { font-size: 1.25rem; }
 
-/* ensure favorites message selector matches markup used by JS */
 #no-favorites.no-favorites-message,
 .no-favorites-message {
   text-align: center;
@@ -696,22 +594,12 @@ body.panel-open .panel-overlay { opacity: 1; pointer-events: auto; }
   color: rgba(58,47,40,0.7);
 }
 
-/* --------------------------
-   OPTIONAL: small accessibility tweaks
-   -------------------------- */
 [aria-hidden="true"] { pointer-events: none; }
 
-/* --------------------------
-   EXAMPLES: panel toggling helpers (kept for CSS-only behavior)
-   JS should toggle body.panel-open when hamburger clicked
-   -------------------------- */
-
-/* animate hamburger to X when open */
 body.panel-open .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 body.panel-open .hamburger span:nth-child(2) { opacity: 0; transform: scale(0.8); }
 body.panel-open .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ===== MOBILE MENU ===== */
 .mobile-toggle {
   width: 32px;
   height: 22px;
