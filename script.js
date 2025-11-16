@@ -277,3 +277,22 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
   nav.classList.toggle("open");
 });
+
+// ===== MOBILE MENU =====
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileToggle = document.getElementById("mobileToggle");
+const mobileLinks = document.querySelectorAll(".mobile-link");
+
+mobileToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("open");
+});
+
+document.querySelector(".mobile-close").addEventListener("click", () => {
+  mobileMenu.classList.remove("open");
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+  });
+});
